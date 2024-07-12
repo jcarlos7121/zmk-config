@@ -11,20 +11,6 @@
 &mt { tapping-term-ms = <400>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        leftbracker {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <40 32 25>;
-        };
-
-        rightbracker {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <40 34 25>;
-        };
-    };
-
     behaviors {
         left_bracet: left_bracet {
             compatible = "zmk,behavior-mod-morph";
@@ -38,6 +24,14 @@
             #binding-cells = <0>;
             bindings = <&kp RIGHT_BRACE>, <&kp RIGHT_BRACKET>;
             mods = <(MOD_LSFT)>;
+        };
+
+        control_tab: control_tab {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp TAB>;
+            mods = <(MOD_LCTL|MOD_LGUI)>;
+            keep-mods = <(MOD_LCTL|MOD_LGUI)>;
         };
     };
 
@@ -82,7 +76,7 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp ESC    &kp TAB  &kp EXCL  &kp DLLR  &trans       &kp STAR   &kp EQUAL  &kp LPAR  &kp RPAR   &trans    &none
+&none  &control_tab &kp TAB  &kp EXCL  &kp DLLR  &trans       &mt UNDER STAR &kp EQUAL  &kp LPAR  &kp RPAR   &trans    &none
 &none  &kp LCTRL  &kp A    &kp AT    &kp HASH  &kp AMPS     &trans     &trans     &trans    &trans     &kp BSLH  &none
 &none  &trans     &kp LT   &kp GT    &kp V     &kp PLUS     &kp MINUS  &kp COLON  &kp PIPE  &kp QMARK  &kp PIPE  &none
                                &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
