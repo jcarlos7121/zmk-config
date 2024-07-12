@@ -14,9 +14,14 @@
     combos {
         compatible = "zmk,combos";
 
-        tabstroke {
-            bindings = <&kp TAB>;
-            key-positions = <35 12 0>;
+        leftbracker {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <40 24 33>;
+        };
+
+        rightbracker {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <40 24 35>;
         };
     };
 
@@ -46,9 +51,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4     &kp N5       &kp N6    &kp N7         &kp N8         &kp N9     &kp N0        &kp BSPC
-&bt BT_CLR  &mt LCTRL F1  &kp F2        &kp F3        &kp F4     &kp F5       &kp LEFT  &kp DOWN       &kp UP         &kp RIGHT  &kp APOS      &kp APOS
-&kp LSHFT   &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_UP  &kp PG_DN  &kp PG_UP    &kp BSPC  &kp SEMICOLON  &kp LBKT  &kp UNDER  &kp RBKT  &trans
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4     &kp N5       &kp N6    &kp N7         &kp N8          &kp N9     &kp N0           &kp BSPC
+&bt BT_CLR  &mt LCTRL F1  &kp F2        &kp F3        &kp F4     &kp F5       &kp LEFT  &kp DOWN       &kp UP          &kp RIGHT  &kp APOS         &kp APOS
+&kp LSHFT   &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_UP  &kp PG_DN  &kp PG_UP    &kp BSPC  &kp SEMICOLON  &kp LEFT_BRACE  &kp UNDER  &kp RIGHT_BRACE  &trans
                                         &kp LGUI      &trans     &kp SPACE    &kp RET   &trans         &kp RALT
             >;
         };
