@@ -38,7 +38,7 @@
                         bindings = <
    &kp TAB    &kp N1 &kp N2   &kp N3 &kp N4  &kp N5     &kp N6   &kp N7   &kp N8 &kp N9  &kp N0 &kp BSPC
    &bt BT_CLR &mt LCTRL F1 &kp F2   &kp F3 &kp F4  &kp F5     &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp APOS &kp APOS
-   &kp LSHFT  &kp LSHFT &kp C_VOL_DN &kp C_VOL_UP &kp PG_DN &kp PG_UP  &kp BSPC &kp SEMICOLON &kp LBKT &kp UNDER &kp RBKT &trans
+   &kp LSHFT  &kp LSHFT &kp C_VOL_DN &kp C_VOL_UP &kp PG_DN &kp PG_UP  &kp BSPC &kp SEMICOLON &sk LBKT LBRC &kp UNDER &kp LS(RBKT) &trans
            	         &kp LGUI &trans  &kp SPACE      &kp RET  &trans   &kp RALT
                         >;
                 };
