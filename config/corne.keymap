@@ -19,6 +19,14 @@
             mods = <(MOD_RSFT)>; // Needs to be right shift other wise I would not be able to type capital Q
             // keep-mods = <(MOD_LCTL|MOD_LGUI)>;
         };
+
+        control_xz: control_xz {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp X>, <&kp Z>;
+            mods = <(MOD_LCTL)>; // Needs to be right shift other wise I would not be able to type capital Q
+            // keep-mods = <(MOD_LCTL|MOD_LGUI)>;
+        };
     };
 
     keymap {
@@ -32,9 +40,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &escape_q     &kp W  &kp E     &kp R      &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P     &none
-&none  &mt LCTRL A   &kp S  &kp D     &kp F      &kp G        &mt RSHIFT H &kp J  &kp K      &kp L    &kp SEMI  &none
-&none  &mt LSHIFT Z  &kp X  &kp C     &kp V      &kp B        &kp N        &kp M  &kp COMMA  &kp DOT  &mo 2     &none
+&none  &escape_q     &kp W        &kp E     &kp R      &kp T        &kp Y        &kp U  &kp I      &kp O    &kp P     &none
+&none  &mt LCTRL A   &kp S        &kp D     &kp F      &kp G        &mt RSHIFT H &kp J  &kp K      &kp L    &kp SEMI  &none
+&none  &mt LSHIFT Z  &control_xz  &kp C     &kp V      &kp B        &kp N        &kp M  &kp COMMA  &kp DOT  &mo 2     &none
                                 &kp LGUI  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &kp RALT
             >;
         };
@@ -62,9 +70,9 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&none  &kp TAB    &kp EXCL  &kp AT   &kp HASH      &kp AMPS    &kp UNDER &kp EQUAL  &kp LPAR         &kp RPAR          &kp APOS &none
-&none  &kp LCTRL  &kp A    &none     &kp KP_DIVIDE &kp PERCENT &kp MINUS &kp PLUS   &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp STAR &none
-&none  &trans     &kp LT   &kp GT    &none         &none       &kp BSLH  &kp COLON  &kp PIPE         &kp QMARK         &kp PIPE &none
+&none  &kp TAB    &kp EXCL  &kp DOLLAR &kp HASH      &kp AMPS    &kp UNDER &kp EQUAL  &kp LPAR         &kp RPAR          &kp APOS &none
+&none  &kp LCTRL  &kp A     &kp AT     &kp KP_DIVIDE &kp PERCENT &kp MINUS &kp PLUS   &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp STAR &none
+&none  &trans     &trans    &trans     &trans        &trans      &kp BSLH  &kp COLON  &kp PIPE         &kp QMARK         &kp PIPE &none
                                &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
