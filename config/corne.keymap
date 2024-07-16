@@ -45,7 +45,7 @@
             bindings = <
 &none  &kp N1        &kp N2        &kp N3        &kp N4     &kp N5       &kp N6    &kp N7     &kp N8          &kp N9     &kp N0           &none
 &none  &mt LCTRL F1  &kp F2        &kp F3        &kp F4     &kp F5       &kp LEFT  &kp DOWN   &kp UP          &kp RIGHT  &kp APOS         &none
-&none  &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_UP  &kp PG_DN  &kp PG_UP    &kp BSPC  &kp DELETE &kp LEFT_BRACE  &kp UNDER  &kp RIGHT_BRACE  &none
+&none  &kp LSHFT     &kp C_VOL_DN  &kp C_VOL_UP  &kp PG_DN  &kp PG_UP    &kp BSPC  &kp DELETE &kp LEFT_BRACE  &kp C_MUTE &kp RIGHT_BRACE  &none
                                         &kp LGUI      &trans     &kp SPACE    &kp RET   &trans         &kp RALT
             >;
         };
