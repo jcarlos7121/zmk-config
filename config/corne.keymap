@@ -14,7 +14,7 @@
           compatible = "zmk,behavior-mod-morph";
           #binding-cells = <0>;
           bindings = <&kp Q>, <&kp ESC>;
-          mods = <(MOD_RSFT)>; // Needs to be right shift other wise I would not be able to type capital Q
+          mods = <(MOD_RSFT|MOD_RALT)>; // Needs to be right shift other wise I would not be able to type capital Q
           // keep-mods = <(MOD_LCTL|MOD_LGUI)>;
       };
 
