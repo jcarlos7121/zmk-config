@@ -59,8 +59,8 @@
 
         raise_layer {
             bindings = <
-&none  &kp TAB    &kp EXCL   &kp DOLLAR &kp HASH      &kp AMPS    &kp UNDER     &kp EQUAL  &kp LPAR         &kp RPAR          &kp APOS &none
-&none  &kp LCTRL  &kp A      &kp AT     &kp KP_DIVIDE &kp PERCENT &kp MINUS     &kp PLUS   &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp STAR &none
+&none  &kp TAB    &kp EXCL   &kp AT     &kp HASH      &kp DOLLAR  &kp UNDER     &kp EQUAL  &kp LPAR         &kp RPAR          &kp APOS &none
+&none  &kp LCTRL  &kp A      &kp AMPS   &kp KP_DIVIDE &kp PERCENT &kp MINUS     &kp PLUS   &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp STAR &none
 &none  &trans     &bt_clear  &bt BT_NXT &kp BSLH      &trans      &kp SEMICOLON &kp COLON  &kp PIPE         &kp QMARK         &kp PIPE &none
                                &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
