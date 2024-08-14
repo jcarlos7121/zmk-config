@@ -10,6 +10,13 @@
 
 / {
     behaviors {
+      bt_clear: bt_clear {
+          compatible = "zmk,behavior-mod-morph";
+          #binding-cells = <0>;
+          bindings = <&kp CARET>, <&bt BT_CLR>;
+          mods = <(MOD_RALT)>;
+      };
+
       escape_q: escape_q {
           compatible = "zmk,behavior-mod-morph";
           #binding-cells = <0>;
@@ -54,7 +61,7 @@
             bindings = <
 &none  &kp TAB    &kp EXCL   &kp DOLLAR &kp HASH      &kp AMPS    &kp UNDER     &kp EQUAL  &kp LPAR         &kp RPAR          &kp APOS &none
 &none  &kp LCTRL  &kp A      &kp AT     &kp KP_DIVIDE &kp PERCENT &kp MINUS     &kp PLUS   &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp STAR &none
-&none  &trans     &bt BT_CLR &bt BT_NXT &kp BSLH      &trans      &kp SEMICOLON &kp COLON  &kp PIPE         &kp QMARK         &kp PIPE &none
+&none  &trans     &bt_clear  &bt BT_NXT &kp BSLH      &trans      &kp SEMICOLON &kp COLON  &kp PIPE         &kp QMARK         &kp PIPE &none
                                &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
