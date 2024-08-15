@@ -49,7 +49,7 @@
         default_layer {
             bindings = <
 &none  &escape_q     &kp W &kp E     &kp R      &kp T        &kp Y         &kp U  &kp I      &kp O    &kp P     &none
-&none  &rpi LCTRL A  &kp S &kp D     &kp F      &kp G        &kb H         &kp J  &kp K      &kp L    &kp SEMI  &none
+&none  &rpi LCTRL A  &kp S &kp D     &kp F      &kp G        &rpi RSHIFT H &kp J  &kp K      &kp L    &kp SEMI  &none
 &none  &mt LSHIFT Z  &kp X &kp C     &kp V      &kp B        &kp N         &kp M  &kp COMMA  &kp DOT  &mo 2     &none
                                 &kp LGUI  &kp LSHFT  &kp SPACE    &kp RET  &mo 1  &kp RALT
             >;
